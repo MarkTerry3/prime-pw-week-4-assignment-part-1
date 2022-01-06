@@ -59,13 +59,22 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
-}
+//let sports = ['baseball', 'hockey', 'football']
 
+
+//function getLast( sports ) {
+//  return sports[sports.length - 1];
+//}
+
+///  ^^^???^^^
+
+console.log(getLast());
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
+
+
 function find( value, array ){
 
 }
@@ -97,3 +106,4 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+////////////////////////
