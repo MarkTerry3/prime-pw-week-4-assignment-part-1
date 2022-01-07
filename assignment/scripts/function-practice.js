@@ -64,16 +64,15 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 
 //function getLast( sports ) {
-//  return sports[sports.length - 1];
+///  return sports[sports.length - 1];
 //}
 
 ///  ^^^???^^^
 
-console.log(getLast());
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-
+let cities = ['Minneapolis', 'Boston', 'New York', 'Los Angeles']
 
 function find( value, array ){
 
