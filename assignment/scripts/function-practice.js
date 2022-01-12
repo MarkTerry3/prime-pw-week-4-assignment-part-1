@@ -18,10 +18,11 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Mark Terry';
+  name = "Mark Terry";
+  return name;
 }
 
-console.log(helloName() );
+console.log(helloName('Hello ') );
 // Remember to call the function to test
 
 
@@ -60,24 +61,34 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 
-//let sports = ['baseball', 'hockey', 'football']
+let sports = ['baseball', 'hockey', 'football']
 
 
-//function getLast( sports ) {
-///  return sports[sports.length - 1];
-//}
+function getLast( array ) {
+  return array[sports.length - 1];
+}
+console.log(getLast(sports));
 
-///  ^^^???^^^
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-let cities = ['Minneapolis', 'Boston', 'New York', 'Los Angeles']
+let cities = ['Minneapolis', 'Boston', 'NewYork', 'Los Angeles']
+let num = [1, 2, 3, 4,];
 
 function find( value, array ){
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value){
+      return true;
+    }
+  }
+  return false;
 }
 
+console.log('is Minneapolis a city?', find('Minneapolis', cities));
+console.log('is Los Angeles a city?', find('Los Angeles', cities));
+console.log('is 0 a number?', find(0, num));
+console.log('is 3 a number?', find(3, num));
 // ----------------------
 // Stretch Goals
 // ----------------------
